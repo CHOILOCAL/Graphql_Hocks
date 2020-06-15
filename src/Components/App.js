@@ -1,11 +1,15 @@
-import React from 'react';
-import GlobalStyles from '../Styles/GlobalStyles';
-import {ThemeProvider} from 'styled-components';
-import Theme from '../Styles/Theme';
+import React from "react";
+import GlobalStyles from "../Styles/GlobalStyles";
+import {ThemeProvider} from "styled-components";
+import Theme from "../Styles/Theme";
+import Router from "./Router.js";
 
 export default () => (
   <ThemeProvider theme={Theme}>
+    <>
     <GlobalStyles />
+    <Router isLoggerdIn={false}/>
+</>
   </ThemeProvider>
 
 );

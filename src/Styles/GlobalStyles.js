@@ -1,7 +1,7 @@
-import {createGrobalStyle} from "styled-components";
+import {createGlobalStyle} from "styled-components";
 import reset from "styled-reset";
 
-export default createGrobalStyle `
+export default createGlobalStyle `
 ${reset};
 * {
     box-sizing:border-box;
